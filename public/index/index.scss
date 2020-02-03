@@ -1,0 +1,141 @@
+
+$background : rgb(31, 31, 31);
+$background-light : rgb(41, 41, 41);
+$background-blue : rgb(39, 39, 41);
+$color: #FFFFFF;
+$margin-width: 3em;
+$margin-height: 2em;
+$color-dark: rgb(216, 216, 216);
+
+body {
+    margin: 0;
+    background-color: $background;
+    user-select: none;
+    color: $color;
+    font-family: 'M PLUS 1p', 'Open Sans', "Roboto Mono", sans-serif;
+}
+#nabvar {
+    width: 100%;
+    height: 2em;
+    -webkit-app-region: drag;
+    #close {
+        -webkit-app-region: no-drag;
+        position: absolute;
+        right: 0.2em;
+        top: 0.2em;
+        width: 1.6em;
+        height: 1.6em;
+        cursor: pointer;
+        & span:before,
+        & span:after {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 84%;
+            height: 1px;
+            margin: -8% 0 0 -42%;
+            background: #9c9c9c;
+        }
+        & span:before {
+            transform: rotate(-45deg);
+        }
+        & span:after {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+
+
+#app {
+    margin-top: $margin-height;
+    margin-bottom: $margin-height;
+    margin-left: $margin-width;
+    margin-right: $margin-width;
+}
+h1 {
+    font-size: 2em;
+    font-weight: normal;
+}
+h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+#menu {
+    display: grid;
+    grid-template: 100% / 50% auto;
+}
+#project-list {
+    margin-right: 2em;
+    .project-item {
+        display: grid;
+        grid-template: 100% / 3em auto;
+        padding: 1em 0.5em;
+
+        &:hover {
+            background-color: rgb(51, 51, 51);
+        }
+        .image img {
+            width: 2em;
+            pointer-events: none;
+        }
+        .info {
+            font-size: 0.9em;
+            .data {
+                display: grid;
+                grid-template: 100% / 50% auto;
+                .date {
+                    color: $color-dark;
+                    margin-left: auto;
+                }
+            }
+            .dir {
+                color: $color-dark;
+            }
+        }
+    }
+}
+#project-create {
+    #create {
+        margin-left: 1em;
+        margin-right: 2em;
+        .label {
+            font-size: 0.9em;
+            margin-bottom: 0.5em;
+            margin-top: 1em;
+        }
+        input {
+            transition-duration: 0.1s;
+            background-color: $background-blue;
+            border: none;
+            border-bottom: solid 1px;
+            border-color: $background;
+            color: $color;
+            width: 100%;
+            font-size: 1.2em;
+            height: 1.5em;
+            padding-left: 5px;
+            letter-spacing: 0.6px;
+            &:focus {
+                transition-duration: 0.1s;
+                background-color: $background;
+                border: none;
+                outline: none;
+                border-bottom: solid 1px;
+                border-color: $color-dark;
+            }
+        }
+        #bottom {
+            text-align: right;
+            margin-top: 2em;
+            button {
+                border: none;
+                background-color: $background-blue;
+                color: #FFFFFF;
+                padding: 0.5em 2em;
+            }
+        }
+    }
+}

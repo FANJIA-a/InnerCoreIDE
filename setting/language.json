@@ -1,0 +1,44 @@
+{
+    "startup" : {
+        "application-name": {
+            "ja": "Inner Core IDE",
+            "en": "Inner Core IDE",
+            "ru": "Inner Core Интегрированная среда разработки"
+        },
+        "list-projects": {
+            "ja": "プロジェクト一覧",
+            "en": "List of projects",
+            "ru": "Список проектов"
+        },
+        "new-projects": {
+            "ja": "プロジェクト作成",
+            "en": "New project",
+            "ru": "Создать проект"
+        },
+        "projects-name":{
+            "ja": "プロジェクト名",
+            "en": "Project name",
+            "ru": "Название проекта"
+        },
+        "projects-dir": {
+            "ja": "ディレクトリ",
+            "en": "project Directory",
+            "ru": "директория проекта"
+        },
+        "projects-username": {
+            "ja": "作成者",
+            "en": "Author",
+            "ru": "автор"
+        },
+        "projects-description": {
+            "ja": "情報",
+            "en": "description",
+            "ru": "описание"
+        },
+        "create-button": {
+            "ja": "作成",
+            "en": "Create",
+            "ru": "Создайте"
+        }
+    }
+}
